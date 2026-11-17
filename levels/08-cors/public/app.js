@@ -19,7 +19,8 @@ async function loadWeather(city) {
     const report = await res.json();
     card.innerHTML = `<div class="name">${report.city}</div>
       <div class="temp">${report.tempC}°C</div>
-      <div class="meta">${report.condition}</div>`;
+      <div class="meta">${report.condition}</div>
+      <div class="meta">Updated ${report.updated.slice(11)} local time</div>`;
   } catch (err) {
     console.error(err);
     card.innerHTML = '';
