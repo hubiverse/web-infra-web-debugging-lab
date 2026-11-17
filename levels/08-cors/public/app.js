@@ -20,7 +20,7 @@ async function loadWeather(city) {
     card.innerHTML = `<div class="name">${report.city}</div>
       <div class="temp">${report.tempC}°C</div>
       <div class="meta">${report.condition}</div>
-      <div class="meta">Updated ${report.updated.slice(11)} local time</div>`;
+      <div class="meta">${report.updated ? `Updated ${report.updated.slice(11)} local time` : 'Sample data (live weather unavailable)'}</div>`;
   } catch (err) {
     console.error(err);
     card.innerHTML = '';

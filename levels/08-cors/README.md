@@ -3,7 +3,7 @@
 **Run:** `npm run level08`, then open http://localhost:5500
 
 ## What should happen
-The page shows the current, live weather for the chosen city: temperature, condition, and when it was last updated. The data comes from the free Open-Meteo service, so you need an internet connection.
+The page shows the current, live weather for the chosen city: temperature, condition, and when it was last updated. The data comes from the free Open-Meteo service. Without internet, the page shows sample data instead.
 
 ## What happens instead
 The page says "Network error. Could not reach the weather service." But when I call the API with `probe.py`, I get the weather with status 200.
