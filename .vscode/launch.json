@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug a level",
+      "program": "${workspaceFolder}/levels/${input:level}/server.js",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "level",
+      "type": "pickString",
+      "description": "Which level?",
+      "options": [
+        "01-broken-json", "02-wrong-url", "03-wrong-shape", "04-missing-await",
+        "05-html-not-json", "06-missing-header", "07-id-mismatch", "08-cors",
+        "09-null-field", "10-string-numbers", "11-silent-failure"
+      ]
+    }
+  ]
+}

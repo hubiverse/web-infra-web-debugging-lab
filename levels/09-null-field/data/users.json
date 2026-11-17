@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Ama Mensah", "email": "ama@example.com", "address": { "city": "Accra", "country": "Ghana" } },
+  { "id": 2, "name": "Kwame Boateng", "email": "kwame@example.com", "address": { "city": "Kumasi", "country": "Ghana" } },
+  { "id": 3, "name": "Aline Uwase", "email": "aline@example.com", "address": { "city": "Kigali", "country": "Rwanda" } },
+  { "id": 4, "name": "Jean Mugisha", "email": "jean@example.com", "address": null },
+  { "id": 5, "name": "Fatou Diallo", "email": "fatou@example.com", "address": { "city": "Dakar", "country": "Senegal" } },
+  { "id": 6, "name": "Tunde Bakare", "email": "tunde@example.com", "address": { "city": "Lagos", "country": "Nigeria" } }
+]

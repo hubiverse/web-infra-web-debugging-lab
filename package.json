@@ -1,0 +1,23 @@
+{
+  "name": "web-debugging-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Eleven broken web apps for practicing debugging",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "level01": "node levels/01-broken-json/server.js",
+    "level02": "node levels/02-wrong-url/server.js",
+    "level03": "node levels/03-wrong-shape/server.js",
+    "level04": "node levels/04-missing-await/server.js",
+    "level05": "node levels/05-html-not-json/server.js",
+    "level06": "node levels/06-missing-header/server.js",
+    "level07": "node levels/07-id-mismatch/server.js",
+    "level08": "node levels/08-cors/server.js",
+    "level09": "node levels/09-null-field/server.js",
+    "level10": "node levels/10-string-numbers/server.js",
+    "level11": "node levels/11-silent-failure/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
