@@ -25,6 +25,8 @@ function describe(code) {
 const api = express();
 
 api.get('/api/weather', async (req, res) => {
+  // Live data: browsers should always ask again instead of using a cached copy
+  res.set('Cache-Control', 'no-store');
   const place = cities[String(req.query.city || '').toLowerCase()];
   if (!place) {
     return res.status(404).json({ error: 'Unknown city' });
